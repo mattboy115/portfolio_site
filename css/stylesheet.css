@@ -180,7 +180,7 @@ figcaption {
 /*_-_-_-_-_-_-_-_-_-_-_-_-_-_Mobile Site_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 
 
-@media screen and (max-width: 6in) {
+@media screen and (max-width: 767px) {
 
 	/*_-_-_-_-_-_-_-_-_-_-_-_-_-_Header Section_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
 	header {
