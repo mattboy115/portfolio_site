@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>The Dev Portfolio of Matthew Lee</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Coda:400,800' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"</script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script>
+
+		jQuery.easing.jswing=jQuery.easing.swing;
+		jQuery.extend(jQuery.easing,{def:"easeOutQuad",
+			easeOutExpo:function(e,f,a,h,g){return(f==g)?a+h:h*(-Math.pow(2,-10*f/g)+1)+a}});
+
+		$(function() {
+			$("a").click(function() {
+				if(this.hash) {
+					var hash = this.hash.substr(1);
+					
+					var $toElement = $("div[name='"+hash+"']");
+					var toPosition = $toElement.position().top;
+
+					$("body,html").animate({scrollTop: toPosition},2000, 
+					"easeOutExpo");
+					return false;
+				} 
+			});
+		});
+	</script>
+</head>
+
+<body>
+<!--Header Section-->
+	<header>
+		<div id="header_div" name="header_div"></div>
+		<img id="header_img" src="images/headertitle.png">
+		<h1>Front End Web Design</h1>
+		<nav>
+			<ul>
+				<li><a href="#about_me">About Me</a></li>
+				<li><a href="#websites">Websites</a></li>
+				<li><a href="#">Comics</a></li>
+				<li><a href="#">Graphics</a></li>
+				<li><a href="#">Voice Over</a></li>
+				<li><a href="#">Contact Me</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<table border="1">
+			<tr>
+				<th>Skills</th>
+				<th>Specialities</th>
+				<th>Hobbies</th>
+
+			</tr>
+			<tr>
+				<td>Sublime Text 2</td>
+				<td>Web Pages</td>
+				<td>Voice Acting</td>
+			</tr>
+			<tr>
+				<td>HTML/CSS</td>
+				<td>Logos</td>
+				<td>Video Games</td>
+			</tr>
+			<tr>
+				<td>Javascript</td>
+				<td>Banners</td>
+				<td>Speed Solving Puzzles</td>
+			</tr>
+			<tr>
+				<td>Adobe Photoshop</td>
+				<td>Voice Acting</td>
+				<td>Learning Japanese</td>
+			</tr>
+			<tr>
+				<td>Adobe Illustrator</td>
+				<td></td>
+				<td>Programming</td>
+			</tr>
+		</table>
+		<a href="#about_me" name="about_me" class="scroll_down"><img src="images/down arrow.png"></a>
+
+	</header>
+	<div id="about_me" name="about_me">
+		<img id="my_face" alt="My Face" src="images/my_face.png">
+		<h2>About Me</h2>
+		<p>I love a challenge.</p> <p>That's why I decided to become a programmer. It challenges me every day and I love it.</p>
+		<p>In my spare time I play video games, narrate horror stories on YouTube, listen to music, practice speed solving techniques for the Rubik's Cube, and design web pages for fun.</p>
+
+		<a href="#websites" name="websites" class="scroll_down"><img src="images/down arrow.png"></a>
+		<a href="#header_div" name="header_div" class="scroll_down"><img src="images/up arrow.png"></a>
+	</div>
+<!--Websites Section-->
+	<div id="websites" name="websites">
+		<h2>Websites</h2>
+		<p>Of all the sites I've had a part in, these are only limited to the ones I've made on my own. I may include more later. Each will have a short description. I hope you enjoy.</p>
+
+		<div id="sites">
+			<figure>
+				<div id="pub"></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+			<figure>
+				<div id="scary"></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+			<figure>
+				<div></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+			<figure>
+				<div id=""></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+			<figure>
+				<div id=""></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+			<figure>
+				<div></div>
+				<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+			</figure>
+
+			<a href="#comics" name="comics" class="scroll_down"><img src="images/down arrow.png"></a>
+			<a href="#about_me" name="about_me" class="scroll_down"><img src="images/up arrow.png"></a>
+		</div>
+	</div>
+<!--Comics Section-->
+	<div id="comics" name="comics">
+	<h2>Comics</h2>
+	<p>Of all the sites I've had a part in, these are only limited to the ones I've made on my own. I may include more later. Each will have a short description. I hope you enjoy.</p>
+
+	<div id="sites">
+		<figure>
+			<div id="pub"></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+		<figure>
+			<div id="scary"></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+		<figure>
+			<div></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+		<figure>
+			<div id=""></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+		<figure>
+			<div id=""></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+		<figure>
+			<div></div>
+			<figcaption>The Sunset Pub &amp Grill site was a project for school where I was given an html file and had to </figcaption>
+		</figure>
+
+		<a href="#comics" name="comics" class="scroll_down"><img src="images/down arrow.png"></a>
+		<a href="#websites" name="websites" class="scroll_down"><img src="images/up arrow.png"></a>
+	</div>
+</div>
+
+<footer><p></p></footer>
+
+</body>
+
+</html>
